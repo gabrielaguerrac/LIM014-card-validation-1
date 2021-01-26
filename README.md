@@ -1,67 +1,70 @@
-# Tarjeta de crédito válida
+# Proyecto: Card Validation
+Este proyecto trata de la validación de una tarjeta usando el mecanismo de Luhn, si los caracteres
+ingresados son válidos son inválidos, aparecerá un mensaje, Número inválido.
 
 ## Índice
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
+* [1. Usuarios](#1-Usuarios)
+* [2. Imagen final del proyecto](#2-imagen-final-del-proyecto)
+* [3. Prototipos](#3-Prototipos)
+* [4. Objetivos de aprendizaje](#4-objetivos-de-aprendizaje)
 * [4. Consideraciones generales](#4-consideraciones-generales)
 * [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
 * [6. Pistas, tips y lecturas complementarias](#6-pistas-tips-y-lecturas-complementarias)
 
 ***
 
-## 1. Preámbulo
+## 1. Usuarios
 
-El [algoritmo de Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn),
-también llamado algoritmo de módulo 10, es un método de suma de verificación,
-se utiliza para validar números de identificación; tales como el IMEI de los
-celulares, tarjetas de crédito, etc.
+* Quiénes son los principales usuarios de producto.
+   Personas que desean validar una tarjeta de inivtación, la cual tiene el formato de una credit card
+* Cuáles son los objetivos de estos usuarios en relación con tu producto.
+   Validar una tarjeta de invitación para poder comprar antes que el resto (como una pre venta)
+* Cómo crees que el producto que estás creando está resolviendo sus problemas.
+   Al tener un mecanismo de validez se puede acreditar si es una tarjeta oficial y seguir con el proceso.
 
-Este algoritmo es simple. Obtenemos la reversa del número a verificar (que
-solamente contiene dígitos [0-9]); a todos los números que ocupan una posición
-par se les debe multiplicar por dos, si este número es mayor o igual a 10,
-debemos sumar los dígitos del resultado; el número a verificar será válido si
-la suma de sus dígitos finales es un múltiplo de 10.
 
-![gráfica de algoritmo de Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
+## 2. Imagen final del proyecto
 
-## 2. Resumen del proyecto
 
-En este proyecto tendrás que construir una aplicación web que le permita a un
-usuario validar el número de una tarjeta de crédito. Además, tendrás que
-implementar funcionalidad para ocultar todos los dígitos de una tarjeta menos
-los últimos cuatro.
 
-La temática es libre. Tú debes pensar en qué situaciones de la vida real se
-necesitaría validar una tarjeta de crédito y pensar en cómo debe ser esa
-experiencia de uso (qué pantallas, explicaciones, mensajes, colores, ¿marca?)
-etc.
+## 3. Prototipos
+Antes de hacer el prototipo en papel, busqué páginas de compra por internet con tarjeta de crédito.
+Las que más llamaron mi atención fueron:
+   Samsung(https://www.samsung.com/us/smartphones/galaxy-s21-5g/?page=home)
+   Apple (https://www.apple.com/es/shop/buy-iphone/iphone-12)
 
-## 3. Objetivos de aprendizaje
+### Prototipo en papel
+Los prototitpos iniciales para este proyecto fueron simples, pero consideré en un inicio un espacio para
+el detalle de la compra. Este no fue considerado en la implementación final. Sin embargo, se mantuvo la idea
+de del cambio de color de los input indicando si el número era inválido.
 
-Trabajando en parejas aprenderán a construir una aplicación web que interactuará
-con lx usuarix final a través del navegador, utilizando HTML, CSS y JavaScript
-como tecnologías.
+
+
+## 4. Objetivos de aprendizaje
+Objetivos de aprendizaje que he considerado alcanzar.
 
 ### HTML y CSS
 
-* [ ] [Uso de HTML semántico.](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
-* [ ] Uso de selectores de CSS.
-* [ ] Construir tu aplicación respetando el diseño realizado (maquetación).
+* [ X ] [Uso de HTML semántico.](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
+* [ X ] Uso de selectores de CSS.
+* [ X ] Construir tu aplicación respetando el diseño realizado (maquetación).
+
+   Comentario: Considero que aún tengo dificultad maquetando lo del diseño, ya que temo que 
+   lo que considero en el diseño sea complejo y me tome más tiempo de lo que espero.
 
 ### DOM
 
-* [ ] Uso de selectores del DOM.
-* [ ] Manejo de eventos del DOM.
+* [ X ] Uso de selectores del DOM.
+* [ X ] Manejo de eventos del DOM.
 * [ ] [Manipulación dinámica del DOM.](https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n)
 (appendChild |createElement | createTextNode| innerHTML | textContent | etc.)
 
 ### JavaScript
 
-* [ ] Manipulación de strings.
-* [ ] Uso de condicionales (if-else | switch | operador ternario)
-* [ ] Uso de bucles (for | for..in | for..of | while)
+* [ X ] Manipulación de strings.
+* [ X ] Uso de condicionales (if-else | switch | operador ternario)
+* [ X ] Uso de bucles (for | for..in | for..of | while)
 * [ ] Uso de funciones (parámetros | argumentos | valor de retorno)
 * [ ] Declaración correcta de variables (const & let)
 
@@ -71,9 +74,9 @@ como tecnologías.
 
 ### Estructura del código y guía de estilo
 
-* [ ] Organizar y dividir el código en módulos (Modularización)
-* [ ] Uso de identificadores descriptivos (Nomenclatura | Semántica)
-* [ ] Uso de linter (ESLINT)
+* [ X ] Organizar y dividir el código en módulos (Modularización)
+* [ X ] Uso de identificadores descriptivos (Nomenclatura | Semántica)
+* [ X ] Uso de linter (ESLINT)
 
 ### Git y GitHub
 
