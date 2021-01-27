@@ -26,7 +26,12 @@ mediante mensajes.
 
 ## 2. Imagen final del proyecto
 
+Pantalla de Inicio
 <img width="1424" alt="PantallaInicio" src="https://user-images.githubusercontent.com/67443691/106008030-ea6e9f80-6084-11eb-90d2-e503ce30af68.png">
+
+Pantalla Card Válida
+<img width="1424" alt="CardValidationTrue" src="https://user-images.githubusercontent.com/67443691/106008427-4507fb80-6085-11eb-94cc-0d39c37c6843.png">
+
 
 
 ## 3. Prototipos
