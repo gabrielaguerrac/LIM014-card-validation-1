@@ -33,7 +33,7 @@ Pantalla Card Válida
 <img width="1424" alt="CardValidationTrue" src="https://user-images.githubusercontent.com/67443691/106008427-4507fb80-6085-11eb-94cc-0d39c37c6843.png">
 
 Pantalla card Invalida
-<img width="1424" alt="CardValidationFalse" src="https://user-images.githubusercontent.com/67443691/106008680-8dbfb480-6085-11eb-98a8-c99e3cb717c3.png">
+<img width="1424" alt="TarInvalid" src="https://user-images.githubusercontent.com/67443691/106010099-1428c600-6087-11eb-9f8d-f8713ac2ce53.png">
 
 ## 3. Prototipos
 Antes de hacer el prototipo en papel, busqué páginas de compra por internet con tarjeta de crédito.
