@@ -1,6 +1,6 @@
 # Proyecto: Card Validation
-Este proyecto trata de la validación de una tarjeta usando el mecanismo de Luhn, si los caracteres
-ingresados son válidos son inválidos, aparecerá un mensaje, Número inválido.
+Este proyecto trata de la validación de una tarjeta usando el mecanismo de Luhn, y notificando si es válida o no
+mediante mensajes. 
 
 ## Índice
 
