@@ -26,6 +26,7 @@ mediante mensajes.
 
 ## 2. Imagen final del proyecto
 
+<img width="1424" alt="PantallaInicio" src="https://user-images.githubusercontent.com/67443691/106008030-ea6e9f80-6084-11eb-90d2-e503ce30af68.png">
 
 
 ## 3. Prototipos
