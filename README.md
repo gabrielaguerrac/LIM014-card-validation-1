@@ -46,10 +46,11 @@ un formulario de compra. Sin embargo luego me pareció más interesante simular 
 el enmascaramiento, es por ello que esta sección no fue considerada en la implementación final. A pesar de ello mantuve la idea de los formularios
 que había visto en apple y samsung, de cambiar el background cuando es inválido.
 
+<img width="1424" alt="Prototipo " src="https://user-images.githubusercontent.com/67443691/106086699-ae712400-60f0-11eb-9177-4dd8f2e33b75.jpeg">
 
-<img width="1424" alt="Prototipo Inicio" src="https://user-images.githubusercontent.com/67443691/106086552-5f2af380-60f0-11eb-9487-c851cfb91348.jpe">
+<img width="1424" alt="Prototipo Inicio" src="https://user-images.githubusercontent.com/67443691/106086552-5f2af380-60f0-11eb-9487-c851cfb91348.jpeg">
 
-<img width="1424" alt="Prototipo si es válida o inválida" src="https://user-images.githubusercontent.com/67443691/106086699-ae712400-60f0-11eb-9177-4dd8f2e33b75.jpeg">
+
 
 
 
