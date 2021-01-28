@@ -51,6 +51,12 @@ que había visto en apple y samsung, de cambiar el background cuando es inválid
 
 
 
+(https://user-images.githubusercontent.com/67443691/106086552-5f2af380-60f0-11eb-9487-c851cfb91348.jpeg)
+
+
+
+
+
 
 ## 4. Objetivos de aprendizaje
 Objetivos de aprendizaje que he considerado alcanzar.
