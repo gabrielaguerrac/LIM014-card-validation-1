@@ -4,7 +4,7 @@ mediante mensajes.
 
 ## Índice
 
-* [1. Usuarios](#1-Usuarios)
+* [1. Definición del producto](#1-Usuarios)
 * [2. Imagen final del proyecto](#2-imagen-final-del-proyecto)
 * [3. Prototipos](#3-Prototipos)
 * [4. Objetivos de aprendizaje](#4-objetivos-de-aprendizaje)
@@ -13,7 +13,7 @@ mediante mensajes.
 
 ***
 
-## 1. Usuarios
+## 1. Definición del Producto
 
 * Quiénes son los principales usuarios de producto.
    Personas que desean validar una tarjeta de inivtación, la cual tiene el formato de una credit card
@@ -52,13 +52,11 @@ Prototipo Inicio
 Prototipo si es válida o no
 <img width="1424" alt="Prototipo Inicio" src="https://user-images.githubusercontent.com/67443691/106086552-5f2af380-60f0-11eb-9487-c851cfb91348.jpeg">
 
+## 4.Imagen final del protoipo
+Para el prototipo final usé Figma.
 
 
-
-
-
-
-## 4. Objetivos de aprendizaje
+## 5. Objetivos de aprendizaje
 Objetivos de aprendizaje que he considerado alcanzar.
 
 ### HTML y CSS
@@ -96,6 +94,8 @@ al index. Usé constantes para almacenar elementos del DOM y variables let dentr
 
 * [ X ] [Testeo unitario.](https://jestjs.io/docs/es-ES/getting-started)
 
+<img width="680" alt="Captura de Pantalla 2021-01-28 a la(s) 10 33 14" src="https://user-images.githubusercontent.com/67443691/106160965-671c7f00-6154-11eb-8a54-ddf7ae7e8dfc.png">
+
 
 ### Estructura del código y guía de estilo
 
@@ -103,10 +103,14 @@ al index. Usé constantes para almacenar elementos del DOM y variables let dentr
 * [ X ] Uso de identificadores descriptivos (Nomenclatura | Semántica)
 * [ X ] Uso de linter (ESLINT)
 
+
+
 ### Git y GitHub
 
-* [ ] Uso de comandos de git (add | commit | pull | status | push)
-* [ ] Manejo de repositorios de GitHub (clone | fork | gh-pages)
+* [ X ] Uso de comandos de git (add | commit | pull | status | push)
+* [ X ] Manejo de repositorios de GitHub (clone | fork | gh-pages)
+
+**Comentario:** En este proyecto no usé pull porque no necesité pasar nada del repositorio remoto al local.
 
 ### UX
 
@@ -115,43 +119,18 @@ al index. Usé constantes para almacenar elementos del DOM y variables let dentr
 * [ X ] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)
 
 
-## 5. Criterios de aceptación mínimos del proyecto
+## 6. Criterios de aceptación mínimos del proyecto
 
 Usa solo caracteres numéricos (dígitos) en la tarjeta a validar [0-9].
 
-### Definición del producto
+**Comentario:** El background del input se pone rojo cuando se ingresa una letra, por ejemplo.
 
-En el `README.md`, cuéntanos cómo pensaste en los usuarios y cuál fue tu proceso
-para definir el producto final a nivel de experiencia y de interfaz.
 
-* Quiénes son los principales usuarios de producto.
-* Cuáles son los objetivos de estos usuarios en relación con tu producto.
-* Cómo crees que el producto que estás creando está resolviendo sus problemas.
 
-### Interfaz de usuario (UI)
 
-La interfaz debe permitir al usuario:
 
-* Insertar el número que queremos validar.
-* Ver el resultado si es válido o no.
-* Ocultar todos los dígitos de su número de tarjeta menos los últimos
-4 caracteres.
-* No debe poder ingresar un campo vacío.
 
-### UX (Diseño de experiencia de usuario)
 
-Antes de iniciar a codear, debes entender el problema que quieres solucionar y
-cómo tu aplicación lo soluciona.
-
-* Trabaja tu primer prototipo con papel y lápiz (blanco y negro).
-* Luego valida esta solución con una compañera (pedir feedback).
-* Toma lo aprendido al momento de validar tu primer prototipo y desarrolla un
-  nuevo prototipo usando alguna herramienta para diseño de prototipos
-  ([Balsamiq](https://balsamiq.com/), [Figma](https://www.figma.com/),
-  [Google Slides](https://www.google.com/intl/es/slides/about/), etc.)
-Estos puntos los presentarás en el `README.md`.
-
-### Scripts / Archivos
 
 #### General
 
