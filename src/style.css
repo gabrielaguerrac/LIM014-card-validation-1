@@ -118,19 +118,29 @@ header{
     margin-top: 20px;
 }
 
+h1{
+    text-align: center ;
+    display: none;
+}
+
+.h1-cuandoCorrecto{
+    margin-top: 10px;
+    text-align: center;
+    display: block;
+}
+
 footer{
     position: absolute;
     top: 90%;
     left: 50%;
     transform: translate(-50%,-10%);
-
 }
 
  #optionPay{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-70%);
+    transform: translate(-50%,-50%);
     max-width: 380px;
     width: 100%;
     background: rgba(255,255,255, 0.60);
@@ -142,11 +152,15 @@ footer{
     margin-bottom: 25px;
     margin-top: 25px;
     width: 100%;
+    border: rgba(255,255,255, 0.60);
     cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
 }
 
 .cardNum-correcto{
-    border: greenyellow solid 3px;
+    border: 30px solid greenyellow;
     background-color: white;
 }
 
@@ -155,23 +169,22 @@ footer{
     background-color: pink;
 }
 
+p{
+    display: none;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
 
-.mensajesInvalidoTrue{
+.mensajesInvalido-True{
     display: block;
-    color: red;
-    opacity: 1;
+    text-decoration: red;
+    text-align: center;
+    
+    
 }
 
 
-input[type="text"]{
-    margin-bottom: 25px;
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 16px;
-    border-style: none;
-}
-
-#creditCard{
+/* #creditCard{
     display: flex;
     margin-bottom: 25px;
     justify-content: space-between;
@@ -187,13 +200,14 @@ input[type="text"]{
 #cvv{
     width: 30%;
     margin-left: 15px; 
-}
+} */
 
 #mnjInvalido{
     margin-bottom: 10px;
     margin-top: 0px;
     justify-content: left;
     text-align: left;
+    text-decoration: red;
 }
 
 .flex-container{
@@ -205,16 +219,24 @@ input[type="text"]{
     margin-bottom: 25px;
 }
 
+#validar{
+    width: 77px;
+    height: 32px;
+    left: 393px;
+    background: rgba(178, 185, 250, 0.45);
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
 
 
 /* #creditCard{
     display: none;
 } ya est'a en el html */ 
 
-h1{
-    text-align: center ;
-    display: none;
-}
+
 
 /* header{
     background-image: url(https://images.unsplash.com/photo-1529650639247-7e3340a77f79?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1650&q=80); 

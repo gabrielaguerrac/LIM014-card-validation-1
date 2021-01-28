@@ -1,131 +1,72 @@
 import validator from './validator.js';
-//eslint-disable-next-line no-unused-vars
-console.log(validator.isValid1);
 
-//let resultado = validator.finalResult;
-
-//let cardNum = document.getElementById("creditNum").value;
-
-// document.getElementById("btnValidar").addEventListener("click", validar);
-
-// function validar(){
-//     let card = document.getElementById("creditNum").value;
-//     console.log(card);
-//     console.log(typeof card);
-// } FUNCIONA V1
-
-
-// function validar(){
-//     let nro = document.getElementById("cardNum").value;
-//     console.log(nro);
-//     validator.isValid(nro);
-
-//     console.log(validator.finalResult);
-
-//     // if(validator
-//     //     console.log(validator.mensaje);
-//     //     // document.getElementById("cardNum").addEventListener("onkeyup", showDetail);
-//     // }else{
-//     //     document.getElementById("mnjInvalido").style.display = "block";
-//     // }
-    
-// }
-
-
+//ALMACENO LOS ELEMENTOS DEL DOM EN UNA CONSTANTE. Esa referencia no cambia
 const nroTarjeta = document.getElementById("cardNum");
 const btnIngresar = document.getElementById("validar");
-/* const expDate = document.getElementById("expDate");
-const cvv = document.getElementById("cvv"); */
-const expresionR = {
-    cardNum: /^[0-9]{1,16}$/
-}
+const tarjetaInvalida = document.getElementById("tarjetaInvalida");
+const bienvenida = document.getElementById("bienvenida");
+const expresionR = { cardNum: /^[0-9]{1,16}$/}
 
-//nroTarjeta.addEventListener("click", showDetail);
-//nroTarjeta.addEventListener('keyup', usandoKey);
+
+tarjetaInvalida.style.color = 'red';
+
+
+//EVENTOS DEL DOM PARA LLAMAR A FUNCIONES
+nroTarjeta.addEventListener("click", habilitarBtn);
 nroTarjeta.addEventListener("keyup", validarCaracter);
+nroTarjeta.addEventListener("keyup", validarCero);
 btnIngresar.addEventListener("click", validar);
 btnIngresar.addEventListener("click", enmascarar);
-/* expDate.addEventListener("click", validar);
-expDate.addEventListener("click", enmascarar); */
-/* nroTarjeta.addEventListener("keyup", (event) =>{
-    console.log(event);
-    var key = event.key;
-    console.log(key);
-    console.log(typeof key);//string
-    
-    
-}); */ //base
-
-//
-
-//algo para tener un backup de lo q estoy capturando
 
 
-
-
-
-function usandoKey(){
-    console.log(event);
-    console.log(KeyboardEvent.key);
-    let cuadradito = KeyboardEvent.key;
-    console.log(cuadradito);
-    console.log(typeof cuadradito);
+//FUNCIONES
+function habilitarBtn(){
+    (nroTarjeta.value == null || nroTarjeta.value == "") ? 
+    btnIngresar.disabled = true :
+    btnIngresar.disabled = false;
 }
-
-
-/* let numeroReal =[];
-numeroReal.length = 16; */
-
-/* function showDetail(){
-    document.getElementById("creditCard").style.display = "block";
-} */
 
 function validarCaracter(){
     if(expresionR.cardNum.test(event.key)){
-        document.getElementById("cardNum").classList.remove("cardNum-incorrecto");
-        /* expDate.disabled = false;
-        cvv.disabled = false; */
+        nroTarjeta.classList.remove("cardNum-incorrecto");
         document.getElementById("caracterInvalido").classList.remove("mensajesInvalidoTrue");
-        document.getElementById("cardNum").classList.add("cardNum-correcto");
+        nroTarjeta.classList.add("cardNum-correcto");
+        bienvenida.classList.remove("h1-cuandoCorrecto");
+        tarjetaInvalida.classList.remove("mensajesInvalido-True");
+        btnIngresar.disabled = false;
+
     }else{
-        document.getElementById("cardNum").classList.add("cardNum-incorrecto");
-      /*   expDate.disabled = true;
-        cvv.disabled = true; */
-        document.getElementById("cardNum").classList.remove("cardNum-correcto");
-        document.getElementById("caracterInvalido").classList.add("mensajesInvalidoTrue");//no se muestra
-    }
-    
+        nroTarjeta.classList.add("cardNum-incorrecto");
+        nroTarjeta.classList.remove("cardNum-correcto");
+        document.getElementById("caracterInvalido").classList.add("mensajesInvalidoTrue");
+        tarjetaInvalida.classList.add("mensajesInvalido-True");
+        btnIngresar.disabled = true;
+    }  
 }
-    //console.log(event.key);
-    /* console.log(numeroReal); */
-
-    function validar(){
-        //let nro = usandoValue();
-        //let cardNumber = document.getElementById("cardNum").KeyboardEvent.key;
-        //let nro = cardNumber;
-        let nro = nroTarjeta.value;
-        console.log(nro);
-        
-        //validator.isValid(nro);
-        let esValida = (validator.isValid(nro));// 
-       //console.log(validator.isValid.);
-        if(esValida == false){
-            document.getElementById("tarjetaInvalida").style.display = "block";
-            btnIngresar.disabled = true;
-        }else{
-            document.getElementById("bienvenida").display = "inline";
-        }
-    }
-
-    function enmascarar(){
-        let teclas = nroTarjeta.value;
-    //numeroReal = nroTarjeta.value;
-    //console.log(numeroReal);
-    let maski = (validator.maskify(teclas));
-    //console.log(event);
-    nroTarjeta.value = maski;
+   
+function validarCero(){
+    (nroTarjeta.value == 0) ? btnIngresar.disabled = true : btnIngresar.disabled = false;
+}
     
-    }
+
+function validar(){
+    let nro = nroTarjeta.value;
+    let esValida = (validator.isValid(nro));
+    //console.log(esValida);
+    if(esValida == false){
+        tarjetaInvalida.classList.add("mensajesInvalido-True");
+        nroTarjeta.classList.add("cardNum-incorrecto");
+        btnIngresar.disabled = true;  
+    }else{
+        bienvenida.classList.add("h1-cuandoCorrecto");
+        }
+}
+
+function enmascarar(){
+    let teclas = nroTarjeta.value;
+    let maski = (validator.maskify(teclas));
+    nroTarjeta.value = maski;
+}
 
     
 
@@ -161,51 +102,18 @@ function validarCaracter(){
 
 
 
-/* function isEmpty(){
-    if(nroTarjeta ==''){
-        
-    }
-} */
 
 
 
 
-/* function enma1(e){
-    let carac = e;
-    console.log(carac);
-} */
-
-/* function enmascarar(){
-    let input = document.getElementById("cardNum").value;
-    console.log(input);
-    //let maski = (validator.maskify(input));
-    
-
-
-} */
-
-
-/* function maskify(){
-    let num = document.getElementById("cardNum").value;
-    console.log(num);
-    
-
-    let nuevoString = (validator.maskify(num));
-    
-    console.log(nuevoString);
-    
-    console.log(num);
-    
-    document.getElementById("cardNum").value = nuevoString; 
-   
-   // nuevoString.textContent;
-    
-    //return nuevoString;
-} */ //enmascara pero cambia el valor y valida
 
 
 
-//funciona
+
+
+
+
+
 
 
     
