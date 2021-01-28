@@ -55,6 +55,8 @@ Prototipo si es válida o no
 ## 4.Imagen final del protoipo
 Para el prototipo final usé Figma.
 
+<img width="896" alt="Captura de Pantalla 2021-01-28 a la(s) 10 58 20" src="https://user-images.githubusercontent.com/67443691/106164355-dc3d8380-6157-11eb-8e86-c98dd2ae8432.png">
+
 
 ## 5. Objetivos de aprendizaje
 Objetivos de aprendizaje que he considerado alcanzar.
@@ -131,24 +133,6 @@ Usa solo caracteres numéricos (dígitos) en la tarjeta a validar [0-9].
 
 
 
-
-#### General
-
-##### `README.md`
-
-Debe contener lo siguiente:
-
-* Un título con el nombre de tu proyecto.
-* Un resumen de 1 o 2 líneas de qué se trata tu proyecto.
-* La imagen final de tu proyecto.
-* Investigación UX:
-  1. Explicar quiénes son los usuarios y los objetivos en relación con el
-    producto.
-  2. Explicar cómo el producto soluciona los problemas/necesidades de dichos
-    usuarios.
-  3. Luego colocarás la foto de tu primer prototipo en papel.
-  4. Agregar un resumen del feedback recibido indicando las mejoras a realizar.
-  5. Imagen del prototipo final.
 
 
 
