@@ -46,8 +46,10 @@ un formulario de compra. Sin embargo luego me pareció más interesante simular 
 el enmascaramiento, es por ello que esta sección no fue considerada en la implementación final. A pesar de ello mantuve la idea de los formularios
 que había visto en apple y samsung, de cambiar el background cuando es inválido.
 
+Prototipo Inicio
 <img width="1424" alt="Prototipo " src="https://user-images.githubusercontent.com/67443691/106086699-ae712400-60f0-11eb-9177-4dd8f2e33b75.jpeg">
 
+Prototipo si es válida o no
 <img width="1424" alt="Prototipo Inicio" src="https://user-images.githubusercontent.com/67443691/106086552-5f2af380-60f0-11eb-9487-c851cfb91348.jpeg">
 
 
@@ -75,6 +77,9 @@ Objetivos de aprendizaje que he considerado alcanzar.
 * [ ] [Manipulación dinámica del DOM.](https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n)
 (appendChild |createElement | createTextNode| innerHTML | textContent | etc.)
 
+  **Comentario:** En este proyecto usé selectores del DOM así como eventos del DOM.
+  El selector que más usé fue getElementById. Usé dos eventos: click y keyup. Sin embargo para manipular el dom usé classList
+
 ### JavaScript
 
 * [ X ] Manipulación de strings.
@@ -83,9 +88,14 @@ Objetivos de aprendizaje que he considerado alcanzar.
 * [ X ] Uso de funciones (parámetros | argumentos | valor de retorno)
 * [ X ] Declaración correcta de variables (const & let)
 
+**Comentario:** Usé algunos métodos de strign como split() y reverse(). Bucles de for para recorrer los elementos de un arreglo.
+Funciones isValida y maskify que tenían un parámetro cada una, recibían argumentos del index.js y retornaban una variable con un valor
+al index. Usé constantes para almacenar elementos del DOM y variables let dentro las funciones tante de validator.js como del index.js
+
 ### Testing
 
 * [ X ] [Testeo unitario.](https://jestjs.io/docs/es-ES/getting-started)
+
 
 ### Estructura del código y guía de estilo
 
