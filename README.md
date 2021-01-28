@@ -42,9 +42,13 @@ Las que más llamaron mi atención fueron:
    Apple (https://www.apple.com/es/shop/buy-iphone/iphone-12)
 
 ### Prototipo en papel
-Los prototitpos iniciales para este proyecto fueron simples, pero consideré en un inicio un espacio para
-el detalle de la compra. Este no fue considerado en la implementación final. Sin embargo, se mantuvo la idea
-de del cambio de color de los input indicando si el número era inválido.
+En los prototitpos iniciales para este proyecto consideré un espacio para el detalle de una compra usando una tarjeta de crédito, ya que la idea era de 
+un formulario de compra. Sin embargo luego me pareció más interesante simular una invitación con un número que se valida con el algoritmo de Luhn y
+el enmascaramiento, es por ello que esta sección no fue considerada en la implementación final. A pesar de ello mantuve la idea de los formularios
+que había visto en apple y samsung, de cambiar el background cuando es inválido.
+
+
+
 
 
 
@@ -57,7 +61,7 @@ Objetivos de aprendizaje que he considerado alcanzar.
 * [ X ] Uso de selectores de CSS.
 * [ X ] Construir tu aplicación respetando el diseño realizado (maquetación).
 
-   Comentario: Considero que aún tengo dificultad maquetando lo del diseño, ya que temo que 
+  **Comentario:** Considero que aún tengo dificultad maquetando lo del diseño, ya que temo que 
    lo que considero en el diseño sea complejo y me tome más tiempo de lo que espero.
 
 ### DOM
@@ -72,12 +76,12 @@ Objetivos de aprendizaje que he considerado alcanzar.
 * [ X ] Manipulación de strings.
 * [ X ] Uso de condicionales (if-else | switch | operador ternario)
 * [ X ] Uso de bucles (for | for..in | for..of | while)
-* [ ] Uso de funciones (parámetros | argumentos | valor de retorno)
-* [ ] Declaración correcta de variables (const & let)
+* [ X ] Uso de funciones (parámetros | argumentos | valor de retorno)
+* [ X ] Declaración correcta de variables (const & let)
 
 ### Testing
 
-* [ ] [Testeo unitario.](https://jestjs.io/docs/es-ES/getting-started)
+* [ X ] [Testeo unitario.](https://jestjs.io/docs/es-ES/getting-started)
 
 ### Estructura del código y guía de estilo
 
@@ -92,9 +96,9 @@ Objetivos de aprendizaje que he considerado alcanzar.
 
 ### UX
 
-* [ ] Diseñar la aplicación pensando y entendiendo al usuario.
-* [ ] Crear prototipos para obtener feedback e iterar.
-* [ ] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)
+* [ X ] Diseñar la aplicación pensando y entendiendo al usuario.
+* [ X ] Crear prototipos para obtener feedback e iterar.
+* [ X ] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)
 
 ## 4. Consideraciones generales
 
